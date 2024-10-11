@@ -3,4 +3,4 @@ CREATE TABLE items (
   title VARCHAR(100) NOT NULL
 );
 
-INSERT INTO items (title) VALUES ('Learn New Technologies'), ('Do more projects');
+INSERT INTO items (title) VALUES ('Learn New Technologies'), ('Do More Projects');
