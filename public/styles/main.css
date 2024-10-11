@@ -1,0 +1,149 @@
+html {
+  background-color: #e4e9fd;
+  font-family: "helvetica neue";
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  min-height: 100vh; 
+  margin: 0;
+}
+main {
+  text-align: center;
+  flex: 1 0 auto;
+}
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+.box {
+  max-width: 400px;
+  margin: 70px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 15px 15px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #001F3F;
+  text-align: center;
+}
+form.edit {
+  display: flex;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+p {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 20px;
+  color: #00204a;
+}
+
+form {
+  text-align: center;
+  margin-left: 20px;
+}
+.delete{
+  border: 0;
+  background-color: white;
+  margin-right: 20px;
+}
+button.add {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color:  #00204a;
+  color: #fff;
+  font-size: 30px;
+  border-width: 0;
+}
+
+button.edit {
+  margin-left: 0px;
+  margin-right: 20px;
+  border: none;
+  background: none;
+}
+
+.icon {
+  height: 20px;
+}
+
+input[type="text"] {
+  text-align: left;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 80%;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #00204a;
+}
+
+::placeholder {
+  color: lightgray;
+  opacity: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--highlight-color);
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  min-height: 50px;
+  color: #00204a;
+  
+
+}
+
+footer > div {
+  width: 250px;
+}
+
+div.author {
+  display: flex;
+  justify-content: center;
+}
+
+#gh-link {
+  text-decoration: none;
+  letter-spacing: 0;
+  color: var(--font-medium);
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  height: 38px;
+}
+
+#gh-logo {
+  width: 35px;
+  height: 35px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#gh-link:hover #gh-logo {
+  transform: rotate(360deg) scale(1.2);
+}
