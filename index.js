@@ -8,9 +8,9 @@ const port = 3000;
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
-  database: "world",
-  password: "10021972",
-  port: 5434,
+  database: "*****",
+  password: "*****",
+  port: ****,
 });
 db.connect();
 
@@ -27,8 +27,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 let items = [
-  { id: 1, title: "Buy milk" },
-  { id: 2, title: "Finish homework" },
+  { id: 1, title: "Learn New Technologies" },
+  { id: 2, title: "Do More Projects" },
 ];
 
 app.get("/", async (req, res) => {
